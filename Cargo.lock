@@ -1451,6 +1451,27 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "42703706b716c37f96a77aea830392ad231f44c9e9a67872fa5548707e11b11c"
 
 [[package]]
+name = "fuchsia-zircon-sys"
+version = "0.4.0-alpha.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "5c6e90cb0e5774d91cf4080cdb5fba5f37c1cdc10755f71dc0b82e43f5aa054d"
+dependencies = [
+ "compiler_builtins",
+ "fuchsia-zircon-types",
+ "rustc-std-workspace-core",
+]
+
+[[package]]
+name = "fuchsia-zircon-types"
+version = "0.4.0-alpha.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "5f87d9c155ae6e6ba56730553ccbfb0c9e2fa36561cf689d1b6453d6409ea40d"
+dependencies = [
+ "compiler_builtins",
+ "rustc-std-workspace-core",
+]
+
+[[package]]
 name = "futf"
 version = "0.1.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -5362,6 +5383,7 @@ dependencies = [
  "core",
  "dlmalloc",
  "fortanix-sgx-abi",
+ "fuchsia-zircon-sys",
  "hashbrown",
  "hermit-abi",
  "libc",
